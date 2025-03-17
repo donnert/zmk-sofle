@@ -46,15 +46,15 @@
 &kp ESC    &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB    &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O            &kp P       &kp BSLH
         &kp CAPS  
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp A LCTRL>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp S LSHFT>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp D LALT>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp F LGUI>; } 
+        &mt { flavor="tap-preferred"; bindings=<&kp A &lctrl>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp S &lshift>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp D &lalt>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp F &lgui>; }  
         &kp G         &kp LEFT   &kp H         
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp J LGUI>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp K LALT>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp L LSHFT>; } 
-        &mt { flavor = "tap-preferred"; tapping-term-ms = 200; bindings = <&kp SEMI LCTRL>; } 
+        &mt { flavor="tap-preferred"; bindings=<&kp J &lgui>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp K &lalt>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp L &lshift>; }  
+        &mt { flavor="tap-preferred"; bindings=<&kp SEMI &lctrl>; }  
         &kp APOS
 &kp LSHFT  &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
 &to 3      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &trans  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
