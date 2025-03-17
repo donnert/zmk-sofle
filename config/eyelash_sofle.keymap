@@ -16,10 +16,10 @@
 /* Left-hand HRMs. */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    bindings = <&kp>, <&kp>;
+    tapping-term-ms = ;
+    quick-tap-ms = ;
+    require-prior-idle-ms = ;
+    bindings = <&kp KC_A>, <&kp LCTRL>; // 탭 동작: A, 홀드 동작: LCTRL
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;
 )
@@ -27,10 +27,10 @@ ZMK_HOLD_TAP(hml,
 /* Right-hand HRMs. */
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    bindings = <&kp>, <&kp>;
+    tapping-term-ms = ;
+    quick-tap-ms = ;
+    require-prior-idle-ms = ;
+    bindings = <&kp KC_J>, <&kp LGUI>; // 탭 동작: J, 홀드 동작: LGUI
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
 )
