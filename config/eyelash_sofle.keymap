@@ -83,7 +83,7 @@
             display-name = "LAYER0";
             bindings = <
 &kp ESC             &kp N1     &kp N2        &kp N3        &kp N4       &kp N5    &kp LA(TAB)        &kp N6       &kp N7           &kp N8        &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB             &kp Q      &kp W         &kp E         &kp R        &kp T     &kp LS(LA(TAB))    &kp Y        &kp U            &kp I         &kp O            &kp P       &kp BSLH
+&kp TAB             &kp Q      &kp W         &kp E         &kp R        &kp T     &kp LA(TAB)        &kp Y        &kp U            &kp I         &kp O            &kp P       &kp BSLH
 &mt LC(SPACE) CAPS  &kp A      &kp S         &kp D         &kp F        &kp G     &kp LS(LA(GRAVE))  &kp H        &kp J            &kp K         &kp L            &kp SEMI    &kp APOS
 &kp LSHFT           &kp Z      &kp X         &kp C         &kp V        &kp B     &kp LA(GRAVE)      &kp N        &kp M            &kp COMMA     &kp DOT          &kp FSLH    &kp ENTER
 &to 0               &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 5 SPACE  &trans    &kp ENTER          &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &kp RIGHT_SHIFT  &kp DELETE
@@ -94,21 +94,21 @@
 
         Num {
             bindings = <
-&trans  &trans            &trans        &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp N7        &kp N8  &kp N9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp N4        &kp N5  &kp N6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp NUMBER_1  &kp N2  &kp N3  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans        &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans        &trans  &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp N7        &kp N8  &kp N9        &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp N4        &kp N5  &kp N6        &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp NUMBER_1  &kp N2  &kp N3        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans        &trans  &kp NUMBER_0  &kp UNDERSCORE       &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &kp PAGE_DOWN  &kp PAGE_UP   &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans         &trans        &trans     &trans
+&trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(70,98,50)  &rgb_ug RGB_COLOR_HSB(189,100,49)  &rgb_ug RGB_COLOR_HSB(109,100,50)  &rgb_ug RGB_COLOR_HSB(0,100,50)    &mmv MOVE_UP     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
+&trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mmv MOVE_DOWN   &kp K_PASTE      &kp K_COPY      &kp K_CUT        &kp K_UNDO       &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
+&trans  &trans                          &trans                           &trans                             &kp LA(LS(SPACE))                  &kp LC(LS(SPACE))                  &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN        &kp UP_ARROW     &kp RIGHT        &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
+&trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mmv MOVE_RIGHT  &trans           &kp PAGE_DOWN   &kp PAGE_UP      &trans           &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+&trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mkp LCLK        &mkp RCLK        &mkp MCLK       &trans           &trans           &trans
             >;
         };
 
