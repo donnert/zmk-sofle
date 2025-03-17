@@ -307,10 +307,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
   - PgDn
   - PgUp
-  - {t: '$$mdi:transfer$$', type: trans}
+  - END
   - RGB SPD
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
