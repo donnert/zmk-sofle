@@ -17,6 +17,13 @@
     hold-trigger-key-positions = <0>;
 };
 
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <180>;
+    quick-tap-ms = <180>;
+    hold-trigger-key-positions = <0>;
+};
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
