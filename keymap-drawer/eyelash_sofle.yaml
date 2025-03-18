@@ -30,8 +30,8 @@ layers:
   - {t: '$$mdi:apple-keyboard-caps$$', h: 'Ctl+$$mdi:keyboard-space$$'}
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
-  - {t: Ctl+F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - {t: Sft+Alt+`, s: Sft+Alt+~}
   - H
