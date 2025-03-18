@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <input/processors.dtsi>
@@ -12,14 +12,14 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <180>;
-    quick-tap-ms = <180>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <150>;
     hold-trigger-key-positions = <0>;
 };
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <180>;
+    tapping-term-ms = <150>;
     quick-tap-ms = <180>;
     hold-trigger-key-positions = <0>;
 };
