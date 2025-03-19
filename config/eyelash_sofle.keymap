@@ -19,8 +19,8 @@
 
 &lt {
     flavor = "tap-preferred";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <150>;
+    tapping-term-ms = <100>;
+    quick-tap-ms = <120>;
     hold-trigger-key-positions = <0>;
 };
 
