@@ -39,7 +39,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: 'Ctl+$$mdi:keyboard-space$$', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
