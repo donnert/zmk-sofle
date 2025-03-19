@@ -52,6 +52,20 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <42 41>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <42 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
