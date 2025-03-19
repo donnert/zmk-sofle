@@ -18,10 +18,10 @@
 };
 
 //&lt {
-  //  flavor = "tap-preferred";
-  //  tapping-term-ms = <130>;
-  //  quick-tap-ms = <150>;
-  //  hold-trigger-key-positions = <0>;
+//  flavor = "tap-preferred";
+//  tapping-term-ms = <130>;
+//  quick-tap-ms = <150>;
+//  hold-trigger-key-positions = <0>;
 //};
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -136,7 +136,7 @@
 &trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mmv MOVE_DOWN   &kp C_AC_PASTE   &kp C_AC_COPY   &kp C_AC_CUT     &kp C_AC_UNDO    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
 &trans  &kp LEFT_GUI                    &kp LEFT_ALT                     &kp LCTRL                          &kp LEFT_SHIFT                     &kp LA(LS(SPACE))                  &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN        &kp UP_ARROW     &kp RIGHT        &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
 &trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mmv MOVE_RIGHT  &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP      &kp END          &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
-&trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mkp LCLK        &mkp RCLK        &mkp MCLK       &trans           &trans           &trans
+&trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mkp LCLK        &mkp RCLK        &kp BACKSPACE   &trans           &trans           &trans
             >;
         };
 
