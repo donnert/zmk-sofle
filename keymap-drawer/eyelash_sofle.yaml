@@ -455,3 +455,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [42, 41]
+  k: Ctl+C
+- p: [42, 43]
+  k: Ctl+V
