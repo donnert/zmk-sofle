@@ -7,7 +7,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - Alt+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - Alt+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - {t: Sft+Alt+`, s: Sft+Alt+~}
+  - {t: Sft+Ctl+`, s: Sft+Ctl+~}
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - {t: Alt+`, s: Alt+~}
+  - {t: Ctl+`, s: Ctl+~}
   - N
   - M
   - {t: ',', s: <}
