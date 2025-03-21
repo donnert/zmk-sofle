@@ -62,6 +62,15 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
         };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -134,7 +143,7 @@
             bindings = <
 &kp ESC             &kp N1          &kp N2          &kp N3        &kp N4        &kp N5     &kp LC(TAB)              &kp N6       &kp N7           &kp N8        &kp N9          &kp N0             &kp BACKSPACE
 &none               &kp Q           &kp W           &kp E         &kp R         &kp T      &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
-&lh_pht LC(SPACE) CAPS  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT S  &lh_pht LCTRL D   &lh_pht LSHIFT F  &kp G      &kp LS(LC(GRAVE))        &kp H        &lh_pht RSHIFT J     &lh_pht LCTRL K   &lh_pht LEFT_ALT L  &lh_pht LEFT_GUI SEMI  &lh_pht LC(SPACE) APOS
+&hm LC(SPACE) CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LSHIFT F  &kp G      &kp LS(LC(GRAVE))        &kp H        &hm RSHIFT J     &hm LCTRL K   &hm LEFT_ALT L  &hm LEFT_GUI SEMI  &hm LC(SPACE) APOS
 &kp LSHFT           &kp Z           &kp X           &kp C         &kp V         &kp B      &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &none
 &to 0               &none           &none           &kp LEFT_ALT  &lt 5 SPACE   &kp TAB    &mt LC(SPACE) LC(SPACE)  &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &none           &none
             >;
