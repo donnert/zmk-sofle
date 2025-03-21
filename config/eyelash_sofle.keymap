@@ -63,14 +63,23 @@
             bindings = <&kp>, <&kp>;
         };
 
+        //hm: homerow_mods {
+          //  compatible = "zmk,behavior-hold-tap";
+            //#binding-cells = <2>;
+            //tapping-term-ms = <150>;
+            ////quick-tap-ms = <70>;
+            //flavor = "tap-preferred";
+            //bindings = <&kp>, <&kp>;
+            //per-key-repeat = <1>;
+        //};
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            //quick-tap-ms = <70>;
-            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            per-key-repeat = <1>;
+
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <200>;
         };
     };
 
