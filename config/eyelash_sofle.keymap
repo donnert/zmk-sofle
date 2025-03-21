@@ -16,9 +16,6 @@
     quick-tap-ms = <170>;
 };
 
-debounce-press-ms = <5>;
-debounce-release-ms = <5>;
-
 //&lt {
 //  flavor = "tap-preferred";
 //  tapping-term-ms = <130>;
@@ -43,6 +40,10 @@ debounce-release-ms = <5>;
 };
 
 / {
+
+    debounce-press-ms = <5>;
+    debounce-release-ms = <5>;
+
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
