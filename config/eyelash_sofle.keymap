@@ -40,7 +40,6 @@
 };
 
 / {
-
     debounce-press-ms = <5>;
     debounce-release-ms = <5>;
 
@@ -135,11 +134,11 @@
 
         Num {
             bindings = <
-&trans  &trans            &trans        &trans  &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACKET  &kp N7        &kp N8  &kp N9        &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp N4        &kp N5  &kp N6        &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &kp NUMBER_1  &kp N2  &kp N3        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans        &trans  &kp NUMBER_0  &kp UNDERSCORE       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans        &trans  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_BRACKET  &kp N7        &kp N8  &kp N9  &kp RIGHT_BRACKET    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp N4        &kp N5  &kp N6  &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &kp NUMBER_1  &kp N2  &kp N3  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans        &trans  &kp N0  &kp UNDERSCORE       &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
