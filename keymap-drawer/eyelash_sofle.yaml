@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - $$mdi:keyboard-tab$$
-  - Ctl+$$mdi:keyboard-space$$
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: 'Ctl+$$mdi:keyboard-space$$'}
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
@@ -459,4 +459,8 @@ combos:
 - p: [42, 41]
   k: Ctl+C
 - p: [42, 43]
+  k: Ctl+V
+- p: [49, 48]
+  k: Ctl+C
+- p: [47, 48]
   k: Ctl+V
