@@ -22,9 +22,8 @@
 //  quick-tap-ms = <150>;
 //  hold-trigger-key-positions = <0>;
 //};
-&kscan {
-    polling-interval-ms = <20>;
-};
+
+&kscan { polling-interval-ms = <20>; };
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -126,9 +125,9 @@
             display-name = "LAYER0";
             bindings = <
 &kp ESC             &kp N1          &kp N2          &kp N3        &kp N4        &kp N5     &kp LC(TAB)              &kp N6       &kp N7           &kp N8        &kp N9          &kp N0             &kp BACKSPACE
-&kp TAB             &kp Q           &kp W           &kp E         &kp R         &kp T      &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
+&none               &kp Q           &kp W           &kp E         &kp R         &kp T      &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
 &mt LC(SPACE) CAPS  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LSHIFT F  &kp G      &kp LS(LC(GRAVE))        &kp H        &mt RSHIFT J     &mt LCTRL K   &mt LEFT_ALT L  &mt LEFT_GUI SEMI  &mt LC(SPACE) APOS
-&kp LSHFT           &kp Z           &kp X           &kp C         &kp V         &kp B      &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &kp ENTER
+&kp LSHFT           &kp Z           &kp X           &kp C         &kp V         &kp B      &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &none
 &to 0               &none           &none           &kp LEFT_ALT  &lt 5 SPACE   &kp TAB    &mt LC(SPACE) LC(SPACE)  &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &none           &none
             >;
 
@@ -167,11 +166,11 @@
 
         Sym {
             bindings = <
-&trans  &trans          &trans           &trans                &trans                 &trans             &trans  &trans  &trans  &trans  &trans        &trans  &trans
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans        &trans  &trans
-&trans  &trans          &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &trans        &trans  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &trans             &trans  &trans  &trans  &trans  &kp QUESTION  &trans  &trans
-&trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &trans          &trans           &trans                &trans                 &trans             &trans  &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &trans          &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans  &trans  &trans  &trans  &trans        &trans
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &trans             &trans  &trans  &trans  &trans  &trans  &kp QUESTION  &trans
+&trans  &trans          &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
