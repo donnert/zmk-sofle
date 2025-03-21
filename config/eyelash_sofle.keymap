@@ -10,11 +10,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <180>;
-    quick-tap-ms = <180>;
-};
+//&mt {
+  //  flavor = "tap-preferred";
+  //  tapping-term-ms = <180>;
+  //  quick-tap-ms = <180>;
+//};
 
 //&lt {
 //  flavor = "tap-preferred";
@@ -23,7 +23,7 @@
 //  hold-trigger-key-positions = <0>;
 //};
 
-&kscan { polling-interval-ms = <20>; };
+//&kscan { polling-interval-ms = <20>; };
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -42,8 +42,8 @@
 };
 
 / {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
+    //debounce-press-ms = <10>;
+   // debounce-release-ms = <10>;
 
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -134,7 +134,7 @@
             bindings = <
 &kp ESC             &kp N1          &kp N2          &kp N3        &kp N4        &kp N5     &kp LC(TAB)              &kp N6       &kp N7           &kp N8        &kp N9          &kp N0             &kp BACKSPACE
 &none               &kp Q           &kp W           &kp E         &kp R         &kp T      &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
-&mt LC(SPACE) CAPS  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LSHIFT F  &kp G      &kp LS(LC(GRAVE))        &kp H        &lh_pht RSHIFT J     &lh_pht LCTRL K   &lh_pht LEFT_ALT L  &lh_pht LEFT_GUI SEMI  &lh_pht LC(SPACE) APOS
+&lh_pht LC(SPACE) CAPS  &lh_pht LEFT_GUI A  &lh_pht LEFT_ALT S  &lh_pht LCTRL D   &lh_pht LSHIFT F  &kp G      &kp LS(LC(GRAVE))        &kp H        &lh_pht RSHIFT J     &lh_pht LCTRL K   &lh_pht LEFT_ALT L  &lh_pht LEFT_GUI SEMI  &lh_pht LC(SPACE) APOS
 &kp LSHFT           &kp Z           &kp X           &kp C         &kp V         &kp B      &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &none
 &to 0               &none           &none           &kp LEFT_ALT  &lt 5 SPACE   &kp TAB    &mt LC(SPACE) LC(SPACE)  &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &none           &none
             >;
