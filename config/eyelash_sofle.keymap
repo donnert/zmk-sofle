@@ -57,16 +57,15 @@
         //bindings = <&kp>, <&kp>;
         //per-key-repeat = <1>;
         //};
-
         //hm: homerow_mods {
-          //  compatible = "zmk,behavior-hold-tap";
-          //  #binding-cells = <2>;
-          //  bindings = <&kp>, <&kp>;
-
-          //  flavor = "tap-preferred";
-          //  tapping-term-ms = <300>;
-          //  quick-tap-ms = <0>;
+        //  compatible = "zmk,behavior-hold-tap";
+        //  #binding-cells = <2>;
+        //  bindings = <&kp>, <&kp>;
+        //  flavor = "tap-preferred";
+        //  tapping-term-ms = <300>;
+        //  quick-tap-ms = <0>;
         //};
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -75,8 +74,8 @@
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>; 
-            hold-trigger-on-release;    
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
         };
     };
 
@@ -101,6 +100,16 @@
         rpaste {
             bindings = <&kp LC(V)>;
             key-positions = <47 48>;
+        };
+
+        language {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <28 29>;
+        };
+
+        spot {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <36 35 36>;
         };
     };
 
