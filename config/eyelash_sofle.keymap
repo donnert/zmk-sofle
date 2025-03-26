@@ -75,6 +75,13 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
+            ignore-modifiers = <&lt>;  // LT 키는 홈 로우 모디파이어에서 제외
+    // hold-trigger-on-release;  // 일단 제거
+
+
+        };
+        &lt {  // LT 키 설정
+            tapping-term-ms = <180>;  // LT의 tapping-term을 hm보다 짧게 설정
         };
     };
 
