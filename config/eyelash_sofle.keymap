@@ -25,7 +25,9 @@
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
-
+        &lt {  // LT 키 설정
+            tapping-term-ms = <180>;  // LT의 tapping-term을 hm보다 짧게 설정
+        };
 / {
     //debounce-press-ms = <10>;
     // debounce-release-ms = <10>;
@@ -80,9 +82,7 @@
 
 
         };
-        &lt {  // LT 키 설정
-            tapping-term-ms = <180>;  // LT의 tapping-term을 hm보다 짧게 설정
-        };
+
     };
 
     combos {
