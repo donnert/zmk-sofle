@@ -127,7 +127,12 @@
         mac1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ASTRK &kp NUMBER_1>;
+            bindings = <
+                &kp ASTRK &kp_down  // 별표 키 누르기
+                &kp NUMBER_1 &kp_down // 숫자 1 키 누르기
+                &kp ASTRK &kp_up    // 별표 키 떼기
+                &kp NUMBER_1 &kp_up   // 숫자 1 키 떼기
+            >;            
             label = "NEW_MACRO";
         };
     };
