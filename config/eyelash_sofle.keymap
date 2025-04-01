@@ -127,7 +127,7 @@
         mac1: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp ASTRK &kp NUMBER_1>;
+            bindings = <&kp ASTRK &kp NUMBER_1>;
             label = "NEW_MACRO";
         };
     };
