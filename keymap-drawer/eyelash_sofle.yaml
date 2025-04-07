@@ -302,9 +302,9 @@ layers:
   - RGB BRI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', h: KP ASTERISK}
-  - {t: '2', h: KP ASTERISK}
-  - {t: '3', h: KP ASTERISK}
+  - {t: KP 1, h: KP ASTERISK}
+  - {t: KP 2, h: KP ASTERISK}
+  - {t: KP 3, h: KP ASTERISK}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
