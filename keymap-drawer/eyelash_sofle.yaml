@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
   - '&kvm1'
-  - {t: KP 2, h: KP ASTERISK}
+  - '&kvm2'
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -302,9 +302,9 @@ layers:
   - RGB BRI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: KP 1, h: KP ASTERISK}
-  - {t: KP 2, h: KP ASTERISK}
-  - {t: KP 3, h: KP ASTERISK}
+  - '&kvm3'
+  - '&kvm2'
+  - '&kvm1'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - HOME
