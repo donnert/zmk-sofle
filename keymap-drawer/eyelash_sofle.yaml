@@ -63,8 +63,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: KP 1, h: KP ASTERISK}
+  - {t: KP 2, h: KP ASTERISK}
   layer1:
   - {t: '`', s: '~'}
   - F1
