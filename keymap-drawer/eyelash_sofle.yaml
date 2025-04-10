@@ -282,8 +282,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - AC PASTE
-  - AC COPY
-  - AC CUT
+  - $$mdi:pan-down$$
+  - $$mdi:pan-up$$
   - AC UNDO
   - RGB SAD
   - RGB SAI
