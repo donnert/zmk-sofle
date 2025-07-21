@@ -81,8 +81,17 @@
 
             //hold-trigger-key-positions = <15 16 17 18 31 32 33 34>;
             // 일단 제거
+        };
 
-            retro-tap;
+        hmrs: hmrs {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            label = "HMRS";
         };
     };
 
@@ -229,11 +238,11 @@
         Default {
             display-name = "LAYER0";
             bindings = <
-&kp ESCAPE          &kp N1          &kp N2          &kp N3        &kp N4        &kp N5       &kp LC(TAB)              &kp N6       &kp N7           &kp N8        &kp N9          &kp N0             &none
-&none               &kp Q           &kp W           &kp E         &kp R         &kp T        &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
-&hm LC(SPACE) CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LSHIFT F  &kp G        &kp LS(LC(GRAVE))        &kp H        &hm RSHIFT J     &hm LCTRL K   &hm LEFT_ALT L  &hm LEFT_GUI SEMI  &hm LC(SPACE) APOS
-&kp LSHFT           &kp Z           &kp X           &kp C         &kp V         &kp B        &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &none
-&to 0               &none           &none           &kp LEFT_ALT  &lt 5 SPACE   &lt 6 TAB    &mt LC(SPACE) LC(SPACE)  &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &kvm1           &kvm2
+&kp ESCAPE          &kp N1          &kp N2          &kp N3        &kp N4          &kp N5       &kp LC(TAB)              &kp N6       &kp N7           &kp N8        &kp N9          &kp N0             &none
+&none               &kp Q           &kp W           &kp E         &kp R           &kp T        &kp LC(TAB)              &kp Y        &kp U            &kp I         &kp O           &kp P              &kp BSLH
+&hm LC(SPACE) CAPS  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hmrs LSHIFT F  &kp G        &kp LS(LC(GRAVE))        &kp H        &hmrs RSHIFT J   &hm LCTRL K   &hm LEFT_ALT L  &hm LEFT_GUI SEMI  &hm LC(SPACE) APOS
+&kp LSHFT           &kp Z           &kp X           &kp C         &kp V           &kp B        &kp LC(GRAVE)            &kp N        &kp M            &kp COMMA     &kp DOT         &kp FSLH           &none
+&to 0               &none           &none           &kp LEFT_ALT  &lt 5 SPACE     &lt 6 TAB    &mt LC(SPACE) LC(SPACE)  &lt 7 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE  &kvm1           &kvm2
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ALT LC(SPACE)>;
