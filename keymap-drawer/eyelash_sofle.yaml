@@ -301,7 +301,7 @@ layers:
   - RGB BRD
   - RGB BRI
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&s1'
   - '&kvm3'
   - '&kvm2'
   - '&kvm1'
