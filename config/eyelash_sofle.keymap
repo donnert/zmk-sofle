@@ -195,6 +195,13 @@
             bindings = <&kp S &kp A &kp M &kp S &kp U &kp N &kp G &kp N1 &kp EXCL>;
             label = "S1";
         };
+
+        p2: p2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N9 &kp N6 &kp D &kp N0 &kp E &kp EXCL &kp DLLR &kp EXCL &kp DLLR>;
+            label = "P2";
+        };
     };
 
     keymap {
@@ -266,7 +273,7 @@
 &trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(70,98,50)  &rgb_ug RGB_COLOR_HSB(189,100,49)  &rgb_ug RGB_COLOR_HSB(109,100,50)  &rgb_ug RGB_COLOR_HSB(0,100,50)    &mmv MOVE_UP     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI
 &trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mmv MOVE_DOWN   &kp C_AC_PASTE   &msc SCRL_DOWN  &msc SCRL_UP     &kp C_AC_UNDO    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI
 &trans  &kp LEFT_GUI                    &kp LEFT_ALT                     &kp LCTRL                          &kp LEFT_SHIFT                     &kp LA(LS(SPACE))                  &mmv MOVE_LEFT   &kp LEFT_ARROW   &kp DOWN        &kp UP_ARROW     &kp RIGHT        &rgb_ug RGB_BRD  &rgb_ug RGB_BRI
-&trans  &s1                             &kvm3                            &kvm2                              &kvm1                              &trans                             &mmv MOVE_RIGHT  &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP      &kp END          &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
+&trans  &s1                             &p2                              &kvm2                              &kvm1                              &trans                             &mmv MOVE_RIGHT  &kp HOME         &kp PAGE_DOWN   &kp PAGE_UP      &kp END          &rgb_ug RGB_SPD  &rgb_ug RGB_SPI
 &trans  &trans                          &trans                           &trans                             &trans                             &trans                             &mkp LCLK        &mkp RCLK        &kp BACKSPACE   &trans           &trans           &trans
             >;
         };
