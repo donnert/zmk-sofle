@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 40
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25
 
 #include <input/processors.dtsi>
@@ -247,11 +247,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans          &trans          &kp F11       &kp F12          &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &caps_word    &trans        &trans          &mmv MOVE_LEFT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &bootloader  &trans
-&trans     &trans        &trans          &trans        &mkp MB1      &mkp MB2        &mkp LCLK        &trans          &trans          &trans        &trans           &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv 0 -40     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10      &trans
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv 0 40      &trans          &trans          &kp F11       &kp F12          &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &caps_word    &trans        &trans          &mmv -40 0     &mmv -40 0      &mmv 0 40       &mmv 0 -40    &mmv 40 0        &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv 40 0      &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &bootloader  &trans
+&trans     &trans        &trans          &trans        &mkp MB1      &mkp MB2        &mkp LCLK      &trans          &trans          &trans        &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
