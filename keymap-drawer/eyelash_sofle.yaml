@@ -59,7 +59,7 @@ layers:
   - {t: Sft+Alt+D, h: Num}
   - {t: '$$mdi:keyboard-space$$', h: Nav}
   - {t: '$$mdi:keyboard-tab$$', h: Fun}
-  - {t: 'Ctl+$$mdi:keyboard-space$$', h: 'Ctl+$$mdi:keyboard-space$$'}
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: 'Ctl+AltGr+$$mdi:keyboard-space$$'}
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace$$', h: Num}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Fun}
